@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0px;
+    background-image: linear-gradient(to left bottom, #c5f0ee, #c3e5eb, #c4dae4, #c5d0da, #c3c6cd, #b8bbc1, #adafb4, #a2a4a8, #8d949a, #78858a, #627679, #4f6766);
+}
+
+.navbar li{
+    display: flex;
+    margin: 40px;
+    list-style: none;
+    font-family: 'Paytone One', sans-serif;
+}
+
+
+.navbar li a{
+    display: flex;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+
+}
+
+main {
+    height: auto;
+    width: 100%;
+background-image: url(../asset/imagenes/pexels-rene-asmussen-325690.jpg);
+   background-color:rgb(253, 253, 253);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    flex-flow: row wrap;
+    background-position: 0px 500px;
+    -webkit-animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both
+}
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+.banner h1{
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    font-family: 'Gluten', cursive;
+    letter-spacing: 15px;
+    top: 0;
+    color:brown
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly
+
+}
+.container img{
+border-radius: 30px;
+
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.fotos-galeria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1{
+    background-image: url(../asset/imagenes/cumpleaños1.jpg);
+}
+.img2{
+    background-image: url(../asset/imagenes/cumpleaños2.jpg);
+}
+.img3{
+    background-image: url(../asset/imagenes/cumpleaños3.jpg);
+}
+.img4{
+    background-image: url(../asset/imagenes/familiar1.jpg);
+}
+.img5{
+    background-image: url(../asset/imagenes/familiar2.jpg);
+}
+.img6{
+    background-image: url(../asset/imagenes/familiar3.jpg);
+}
+.img7{
+    background-image: url(../asset/imagenes/navideña1.jpg);
+}
+.img8{
+    background-image: url(../asset/imagenes/navideña2.jpg);
+}
+.img9{
+    background-image: url(../asset/imagenes/navideña3.jpg);
+}
+.img10{
+    background-image: url(../asset/imagenes/rn2.jpg);
+}
+.img11{
+    background-image: url(../asset/imagenes/rn1.jpg);
+}
+.img12{
+    background-image: url(../asset/imagenes/rn3.jpg);
+}
+
+
+h1{
+    background-color: #912d8019;
+    text-align:center;
+    color: rgb(53, 50, 15);
+}
+
+h2{
+    background-color: #f7f1f6 ;
+    text-align: center;
+    color: rgb(26, 30, 2);
+}
+h3{
+    text-align: center;
+    display: flex;
+}
+
+.parrafos{
+    display: flex;
+
+}
+
+
+
+
+.fotosestudio{
+display: grid;
+width: 100%;
+grid-template-columns: auto auto auto auto auto;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"img-1 img-1 img-2 img-2"
+"img-1 img-1 img-2 img-2"
+"img-3 img-3 img-4 img-4"
+"img-3 img-3 img-4 img-4"
+"img-5 img-5 img-6 img-6"
+"img-5 img-5 img-6 img-6"
+;
+justify-items: center;
+align-items: center;
+}
+.img-1{
+    grid-area: img-1;
+}
+.img-2{
+    grid-area: img-2;
+}
+.img-3{
+    grid-area: img-3;
+}
+.img-4{
+    grid-area: img-4;
+}
+.img-5{
+    grid-area: img-5;
+}
+.img-6{
+    grid-area: img-6;
+}
+
+.formulario{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 400px;
+}
+
+
+footer{
+    height: auto;
+    background-color: rgba(24, 20, 22, 0.581);
+
+}
+
+@media (max-width:767px){
+
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: rgb(208, 193, 211);
+    }
+
+    .banner h1{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly
+    
+    }
+
+    .container img {
+        border-radius: 10%;
+    }
+
+    .fotosestudio{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1 img1 img2 img2"
+        "img1 img1 img2 img2"
+        "img3 img3 img4 img4"
+        "img3 img3 img4 img4"
+        "img5 img5 img6 img6"
+        "img5 img5 img6 img6"
+        ;
+        justify-items: center;
+        align-items: center;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        
+        .formulario{
+            margin-top: 25px;
+            margin-left: 150px;
+            margin-right: 200px;
+        }
+
+}
+
