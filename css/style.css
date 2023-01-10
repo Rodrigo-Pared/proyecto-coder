@@ -139,7 +139,6 @@ main {
     border-radius: 30px;
     .scale-in-ver-center 
         -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .novedades{
@@ -249,6 +248,7 @@ h2{
 h3{
     text-align: center;
     padding: 2%;
+    font-size: 40px;
 
 }
 
@@ -264,7 +264,7 @@ text-align: center;
 .fotosestudio{
 display: grid;
 width: 100%;
-height: 980px;
+height: 100%;
 grid-template-columns: repeat(4,1fr);
 grid-template-rows:repeat(6,1fr) ;
 grid-template-areas: 
@@ -277,6 +277,7 @@ grid-template-areas:
 ;
 justify-items: center;
 align-items: center;
+gap: 20px;
 }
 .img-1{
     grid-area: img-1;
@@ -311,7 +312,12 @@ align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 20px
+    gap: 20px;  
+}
+
+.mapa iframe {
+    margin: 40px;
+    border-radius: 20px;
 }
 
 footer{
@@ -322,6 +328,11 @@ footer{
 
 
 @media (max-width:767px){
+    
+    header{
+        height: auto;
+    }
+
 
     .navbar{
         display: flex;
@@ -329,7 +340,15 @@ footer{
         align-items: center;
         background-image: none;
         background-color: #adafb4;
+    }
 
+    .navbar li a {
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+        padding: 10px 15px;
+        color: #000000;
     }
 
     .banner h1{
@@ -349,42 +368,23 @@ footer{
         border-radius: 10%;
     }
 
-
+   h3{
+    font-size: 20px;
+   }
 
 
     .fotosestudio{
-        display: grid;
-        width: 100%;
-        text-align: center;
-        grid-template-rows: repeat(2,1fr)
-        grid-template-areas: 
-        "img1 img1 img1" 
-        "img2 img2 img2"
-        "img3 img3 img3"
-        "img4 img4 img4"
-        "img5 img5 img5"
-        "img6 img6 img6"
+        grid-template-columns: 1fr
+        grid-template-rows:repeat(6,1fr) ;
+        grid-template-areas:
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6"
         ;
-        }
-
-        .img1{
-            grid-area: img1;
-        }
-        .img2{
-            grid-area: img2;
-        }
-        .img3{
-            grid-area: img3;
-        }
-        .img4{
-            grid-area: img4;
-        }
-        .img5{
-            grid-area: img5;
-        }
-        .img6{
-            grid-area: img6;
-        }
+    }
         
         .formulario{
             margin-top: 15px;
@@ -392,9 +392,13 @@ footer{
             margin-right: 100px;
         }
 
+        .mapa iframe{
+            border-radius: 30px;
+            margin: 30px
+        }
     }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px){
    
     .navbar{
         display: flex;
@@ -403,9 +407,16 @@ footer{
         justify-items: center;
         background-image: none;
         background-color: #83868d;
-
     }
 
+    .navbar li a {
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        padding: 10px 15px;
+        color: #000000;
+    }
 
     .banner h1{
         font-size: 35px;
@@ -464,4 +475,9 @@ footer{
             margin-left: 170px;
             margin-right: 220px;
         }
+
+        h3{
+            font-size: 30px;
+           }
+
 }
