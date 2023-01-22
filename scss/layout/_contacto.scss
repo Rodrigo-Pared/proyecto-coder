@@ -1,0 +1,18 @@
+
+.formulario {
+	height: 700px;
+	margin-top: 50px;
+	margin-left: 300px;
+	margin-right: 400px;
+}
+.mapa {
+	@extend %medidas;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	gap: 20px;
+	iframe {
+		margin: 40px;
+		border-radius: 20px;
+	}
+}

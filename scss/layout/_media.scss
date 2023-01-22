@@ -1,0 +1,136 @@
+
+@media (max-width:767px) {
+	header {
+		height: auto;
+	}
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: none;
+		background-color: $background-color_1;
+		li {
+			a {
+				text-decoration: none;
+				font-family: $font-family_1;
+				font-weight: normal;
+				font-size: 15px;
+				padding: 10px 15px;
+				color: $color_1;
+			}
+		}
+	}
+	.banner {
+		h1 {
+			font-size: 18px;
+		}
+	}
+	.container {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		img {
+			border-radius: 10%;
+		}
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.fotosestudio {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6,1fr);
+		grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6";
+	}
+	.formulario {
+		margin-top: 15px;
+		margin-left: 70px;
+		margin-right: 100px;
+	}
+	.mapa {
+		iframe {
+			border-radius: 30px;
+			margin: 30px;
+		}
+	}
+}
+
+
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-items: center;
+            background-image: none;
+            background-color: $background-color_1;
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: $font-family_1;
+                    font-weight: normal;
+                    font-size: 20px;
+                    padding: 10px 15px;
+                    color: $color_1;
+                }
+            }
+        }
+        .banner {
+            h1 {
+                font-size: 35px;
+            }
+        }
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            img {
+                border-radius: 25%;
+            }
+        }
+
+        .fotosestudio{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:repeat(4,1fr) ;
+            grid-template-areas: 
+            "img-1 img-2"
+            "img-1 img-2"
+            "img-3 img-4"
+            "img-3 img-4"
+            "img-6 img-5"
+            "img-6 img-5"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            }
+            .img-1{
+                grid-area: img-1;
+            }
+            .img-2{
+                grid-area: img-2;
+            }
+            .img-3{
+                grid-area: img-3;
+            }
+            .img-4{
+                grid-area: img-4;
+            }
+            .img-5{
+                grid-area: img-5;
+            }
+            .img-6{
+                grid-area: img-6;
+            }
+
+        h3 {
+            font-size: 30px;
+        }
+    }

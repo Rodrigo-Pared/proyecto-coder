@@ -1,0 +1,28 @@
+main {
+    height: 100%;
+    width: 100%;
+    background-image: url(../asset/imagenes/pexels-rene-asmussen-325690.jpg);
+   background-color:rgb(253, 253, 253);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+h1{
+    background-color: #912d8019;
+    text-align:center;
+    color: rgb(53, 50, 15);
+}
+
+h2{
+    
+    background-color: #5a57596c ;
+    text-align: center;
+    color: rgb(26, 30, 2);
+    font-family: $tipografia-secundaria;
+}
+h3{
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+}

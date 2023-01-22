@@ -1,0 +1,86 @@
+
+@-webkit-keyframes focus-in-contract-bck {
+	0% {
+		letter-spacing: 1em;
+		-webkit-transform: translateZ(300px);
+		transform: translateZ(300px);
+		-webkit-filter: blur(12px);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(12px);
+		transform: translateZ(12px);
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+@keyframes focus-in-contract-bck {
+	0% {
+		letter-spacing: 1em;
+		-webkit-transform: translateZ(300px);
+		transform: translateZ(300px);
+		-webkit-filter: blur(12px);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(12px);
+		transform: translateZ(12px);
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+.navbar {
+	@include flex (row wrap, center);
+	list-style: none;
+	padding: 0px;
+	background-image: linear-gradient(to left bottom, #c5f0ee, #c3e5eb, #c4dae4, #c5d0da, #c3c6cd, #b8bbc1, #adafb4, #a2a4a8, #8d949a, #78858a, #627679, #4f6766);
+	li {
+		display: flex;
+		margin: 15px;
+		list-style: none;
+		transition: all 0.5s;
+		a {
+			text-decoration: none;
+			font-family: $font-family_1;
+			font-weight: normal;
+			font-size: 26px;
+			padding: 10px 15px;
+			color: $color_1;
+			&:hover {
+				font-weight: bold;
+				background-color: $background-color_1;
+				border-radius: 40px;
+			}
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+.banner {
+	width: 100%;
+	height: 390px;
+	background-image: url(../asset/imagenes/banner-bebes2.jpg);
+	background-repeat: no-repeat;
+	flex-flow: row wrap;
+	background-position: center;
+	background-size: cover;
+	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+	animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+	h1 {
+		font-size: 50px;
+		position: relative;
+		text-align: center;
+		font-family: $font-family_2;
+		letter-spacing: 15px;
+		top: 0;
+		color: $color_2;
+	}
+}
+.novedades {
+	text-align: center;
+}

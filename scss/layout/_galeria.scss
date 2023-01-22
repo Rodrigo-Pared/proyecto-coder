@@ -1,0 +1,66 @@
+.galeria{
+    @extend %medidas;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.fotos-galeria{
+    @extend %medidas;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1{
+    background-image: url(../asset/imagenes/cumpleaños1.jpg);
+}
+.img2{
+    background-image: url(../asset/imagenes/cumpleaños2.jpg);
+}
+.img3{
+    background-image: url(../asset/imagenes/cumpleaños3.jpg);
+}
+.img4{
+    background-image: url(../asset/imagenes/familiar1.jpg);
+}
+.img5{
+    background-image: url(../asset/imagenes/familiar2.jpg);
+}
+.img6{
+    background-image: url(../asset/imagenes/familiar3.jpg);
+}
+.img7{
+    background-image: url(../asset/imagenes/navideña1.jpg);
+}
+.img8{
+    background-image: url(../asset/imagenes/navideña2.jpg);
+}
+.img9{
+    background-image: url(../asset/imagenes/navideña3.jpg);
+}
+.img10{
+    background-image: url(../asset/imagenes/rn2.jpg);
+}
+.img11{
+    background-image: url(../asset/imagenes/rn1.jpg);
+}
+.img12{
+    background-image: url(../asset/imagenes/rn3.jpg);
+}
+
+
+.parrafos{
+    display: flex;
+text-align: center;
+}
