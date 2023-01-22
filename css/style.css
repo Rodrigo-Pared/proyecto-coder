@@ -216,7 +216,12 @@ h3 {
   height: 100%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-2 img-2" "img-3 img-3 img-4 img-4" "img-3 img-3 img-4 img-4" "img-5 img-5 img-6 img-6" "img-5 img-5 img-6 img-6";
+  grid-template-areas: "img-1 img-1 img-2 img-2"
+ "img-1 img-1 img-2 img-2"
+ "img-3 img-3 img-4 img-4"
+ "img-3 img-3 img-4 img-4"
+ "img-5 img-5 img-6 img-6"
+ "img-5 img-5 img-6 img-6";
   justify-items: center;
   align-items: center;
   gap: 20px; }
@@ -329,7 +334,12 @@ footer {
     height: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "img-1 img-2" "img-1 img-2" "img-3 img-4" "img-3 img-4" "img-6 img-5" "img-6 img-5";
+    grid-template-areas: "img-1 img-2"
+ "img-1 img-2"
+ "img-3 img-4"
+ "img-3 img-4"
+ "img-6 img-5"
+ "img-6 img-5";
     justify-items: center;
     align-items: center;
     gap: 20px; }
